@@ -11,7 +11,7 @@ if __name__ == '__main__':
     # Initiliase the analysis object
     db = dbAnalysis(topDBSearchList)
     # Build the payload - cat 343 = Enterprise Technology -> Data Management 343
-    db.build_payload()
+    db.build_payload(cat=343)
 
     # Get the interest over time of the top database
     db.getInterestOverTime()
